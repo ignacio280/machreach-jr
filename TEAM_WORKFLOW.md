@@ -7,7 +7,7 @@ This repo is set up so each teammate can use their own Codex without stepping on
 - GitHub repo: source of truth for code.
 - Linear: source of truth for tasks.
 - Pull requests: source of truth for review and handoff.
-- Preview deployment: source of truth for what the page looks like.
+- Local preview: each teammate runs the page on their own computer.
 
 ## Normal Flow
 
@@ -29,8 +29,32 @@ npm run check
 
 5. Commit and push the branch.
 6. Open a pull request.
-7. Share the preview URL in Linear.
+7. Attach a screenshot or short screen recording from your local preview to the PR or Linear issue.
 8. Another teammate can continue by checking out the same branch or asking Codex to continue from the PR.
+
+## Local Preview
+
+Every teammate previews the page locally:
+
+```bash
+git clone https://github.com/ignacio280/machreach-jr.git
+cd machreach-jr
+npm install
+npm run build
+npm run serve
+```
+
+Open:
+
+```text
+http://127.0.0.1:8792/index.html
+```
+
+If two projects are already using `8792`, run:
+
+```bash
+node scripts/serve.mjs 8794
+```
 
 ## Good Linear Issues
 
@@ -48,7 +72,7 @@ CTA row wraps cleanly, no horizontal overflow.
 Acceptance:
 - 390px and desktop verified
 - npm run check passes
-- screenshot added to PR
+- screenshot from local preview added to PR
 ```
 
 Bad:
@@ -67,6 +91,8 @@ Done:
 - Verified:
 
 Preview:
+- Local URL:
+- Screenshot:
 
 Needs next:
 - 
@@ -82,4 +108,5 @@ Continue from PR #__ / branch __.
 Read the PR comments and Linear issue first.
 Do not rewrite unrelated sections.
 Run npm run check before finishing.
+Use npm run serve for local preview.
 ```

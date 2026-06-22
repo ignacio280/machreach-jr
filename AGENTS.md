@@ -8,6 +8,7 @@ This repo is the MachReach JR landing prototype for school students. It is separ
 - Build production output: `npm run build`
 - Safe test build: `npm run check`
 - Local preview: `npm run serve`, then open `http://127.0.0.1:8792/index.html`
+- Alternate port: `node scripts/serve.mjs 8794`
 
 ## Editing Rules
 
@@ -23,4 +24,4 @@ This repo is the MachReach JR landing prototype for school students. It is separ
 - `npm run check` passes.
 - No horizontal overflow on desktop or mobile.
 - Landing copy still says MachReach JR or clearly targets school students.
-- Preview link is posted in the PR or Linear issue.
+- Local preview screenshot or screen recording is posted in the PR or Linear issue.

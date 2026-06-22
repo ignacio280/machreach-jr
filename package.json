@@ -7,7 +7,8 @@
   "scripts": {
     "build": "node build.mjs",
     "build:test": "node build.mjs test",
-    "serve": "python -m http.server 8792",
+    "serve": "node scripts/serve.mjs",
+    "serve:8793": "node scripts/serve.mjs 8793",
     "check": "npm run build:test"
   },
   "devDependencies": {
