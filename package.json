@@ -1,0 +1,17 @@
+{
+  "name": "machreach-jr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone MachReach JR landing prototype for school students.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:test": "node build.mjs test",
+    "serve": "python -m http.server 8792",
+    "check": "npm run build:test"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0"
+  }
+}
