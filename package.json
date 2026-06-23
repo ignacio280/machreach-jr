@@ -9,6 +9,7 @@
     "build:test": "node build.mjs test",
     "serve": "node scripts/serve.mjs",
     "serve:8793": "node scripts/serve.mjs 8793",
+    "branch": "node scripts/start-issue-branch.mjs",
     "check": "npm run build:test"
   },
   "devDependencies": {

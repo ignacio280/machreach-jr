@@ -37,6 +37,12 @@ git pull
 git checkout -b nuv-12-fix-mobile-hero
 ```
 
+Recommended shortcut:
+
+```bash
+npm run branch NUV-12 fix-mobile-hero
+```
+
 3. Ask your own Codex to make the change on that branch.
 4. Run:
 
@@ -127,7 +133,8 @@ Files touched:
 ## Codex Handoff Prompt
 
 ```text
-Continue from PR #__ / branch __.
+Work on Linear issue NUV-__.
+First run npm run branch NUV-__.
 Read the PR comments and Linear issue first.
 Do not rewrite unrelated sections.
 Use https://github.com/ignacio280/machreach as reference only when needed.

@@ -50,6 +50,12 @@ git pull
 git checkout -b nuv-12-hero-copy
 ```
 
+Or use the helper:
+
+```bash
+npm run branch NUV-12 hero-copy
+```
+
 Then ask Codex to work on that branch. Open a pull request when the change is ready, attach a screenshot from your local preview, and leave handoff notes in the PR or Linear issue.
 
 See `TEAM_WORKFLOW.md` for the full Codex + Linear + local preview workflow.

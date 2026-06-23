@@ -17,6 +17,23 @@ Use the university repo to study existing visual patterns, structure, interactio
 - Safe test build: `npm run check`
 - Local preview: `npm run serve`, then open `http://127.0.0.1:8792/index.html`
 - Alternate port: `node scripts/serve.mjs 8794`
+- Start an issue branch: `npm run branch NUV-13`
+
+## Linear Issue Workflow
+
+When the user asks to work on a Linear issue, for example "Work on Linear issue NUV-13", start by creating or switching to an issue branch before editing files:
+
+```bash
+npm run branch NUV-13
+```
+
+If the prompt includes a useful short title, pass it as the optional slug:
+
+```bash
+npm run branch NUV-13 focus-guard
+```
+
+Do not make issue work directly on `main`. If the working tree has uncommitted changes, stop and ask how to handle them.
 
 ## Editing Rules
 
