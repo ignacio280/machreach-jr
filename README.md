@@ -2,6 +2,16 @@
 
 MachReach JR is a standalone landing prototype for school students. It is separate from the main MachReach university project.
 
+## Reference Repo
+
+The MachReach university code is public and can be used as a reference:
+
+```text
+https://github.com/ignacio280/machreach
+```
+
+Use it to understand the existing MachReach design, interaction patterns, and shared product ideas. Do not copy changes back into MachReach university unless a Linear issue explicitly asks for that.
+
 ## Run Locally
 
 ```bash
@@ -37,7 +47,7 @@ Use one branch per task:
 ```bash
 git checkout main
 git pull
-git checkout -b mjr-12-hero-copy
+git checkout -b nuv-12-hero-copy
 ```
 
 Then ask Codex to work on that branch. Open a pull request when the change is ready, attach a screenshot from your local preview, and leave handoff notes in the PR or Linear issue.

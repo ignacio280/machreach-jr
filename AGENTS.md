@@ -2,6 +2,14 @@
 
 This repo is the MachReach JR landing prototype for school students. It is separate from the main MachReach university app.
 
+The MachReach university repo is public and may be used as a reference:
+
+```text
+https://github.com/ignacio280/machreach
+```
+
+Use the university repo to study existing visual patterns, structure, interaction ideas, and shared product logic. Keep JR implementation work in this repo unless the Linear issue explicitly says to modify MachReach university.
+
 ## Commands
 
 - Install dependencies: `npm install`
@@ -16,6 +24,7 @@ This repo is the MachReach JR landing prototype for school students. It is separ
 - Run `npm run build` when producing final landing output.
 - Do not edit generated `bundle.min.js` by hand.
 - Do not change the main MachReach university project from this repo.
+- When using MachReach university as reference, copy intent and patterns carefully instead of blindly copying unrelated code.
 - Keep copy aimed at school students, not university students.
 - Avoid fake claims about prizes, rewards, schools, integrations, or paid features unless they are actually implemented.
 

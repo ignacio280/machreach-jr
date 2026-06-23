@@ -4,10 +4,27 @@ This repo is set up so each teammate can use their own Codex without stepping on
 
 ## Source Of Truth
 
-- GitHub repo: source of truth for code.
+- MachReach JR GitHub repo: source of truth for JR code.
+- MachReach university GitHub repo: reference source for existing MachReach patterns.
 - Linear: source of truth for tasks.
 - Pull requests: source of truth for review and handoff.
 - Local preview: each teammate runs the page on their own computer.
+
+## Repositories
+
+MachReach JR work happens here:
+
+```text
+https://github.com/ignacio280/machreach-jr
+```
+
+MachReach university is available as a reference:
+
+```text
+https://github.com/ignacio280/machreach
+```
+
+Clone MachReach university when you need to copy the look, structure, product logic, or behavior. Keep actual JR changes in the MachReach JR repo unless a Linear issue explicitly says to touch MachReach university.
 
 ## Normal Flow
 
@@ -17,7 +34,7 @@ This repo is set up so each teammate can use their own Codex without stepping on
 ```bash
 git checkout main
 git pull
-git checkout -b mjr-12-fix-mobile-hero
+git checkout -b nuv-12-fix-mobile-hero
 ```
 
 3. Ask your own Codex to make the change on that branch.
@@ -44,6 +61,12 @@ npm run build
 npm run serve
 ```
 
+Optional reference checkout:
+
+```bash
+git clone https://github.com/ignacio280/machreach.git
+```
+
 Open:
 
 ```text
@@ -61,7 +84,7 @@ node scripts/serve.mjs 8794
 Good:
 
 ```text
-MJR-12: Fix mobile hero spacing
+NUV-12: Fix mobile hero spacing
 
 Problem:
 The hero CTA overlaps the leaderboard card on 390px screens.
@@ -107,6 +130,7 @@ Files touched:
 Continue from PR #__ / branch __.
 Read the PR comments and Linear issue first.
 Do not rewrite unrelated sections.
+Use https://github.com/ignacio280/machreach as reference only when needed.
 Run npm run check before finishing.
 Use npm run serve for local preview.
 ```
